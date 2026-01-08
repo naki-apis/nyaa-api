@@ -14,7 +14,6 @@ def index():
         <li><strong>/fun?q=termino</strong> - Búsqueda en nyaa.si</li>
         <li><strong>/fap?q=termino</strong> - Búsqueda en sukebei.nyaa.si</li>
     </ul>
-    <p>Ejemplo: <a href="/fun?q=naruto">/fun?q=naruto</a></p>
     '''
 
 @app.route('/fun')
@@ -54,4 +53,4 @@ def not_found(e):
     return redirect('/')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True,host='0.0.0.0', port=5000)
